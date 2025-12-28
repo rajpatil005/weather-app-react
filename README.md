@@ -1,16 +1,96 @@
-# React + Vite
+# Weather App React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly **Weather App** built with **React** and **Vite**.  
+Users can search for a city and view current weather information using the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Search weather by city name
+- Displays temperature, condition, humidity, and wind speed
+- Loading state while fetching data
+- Error handling for invalid city names or network issues
+- Supports **Enter key** and button click for search
+- Responsive design with clean UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (Functional components & hooks)
+- **JavaScript (ES6+)**
+- **HTML & CSS**
+- **Vite** for fast development
+- **OpenWeatherMap API** for weather data
+- **localStorage** not used (optional if you want to save search history)
+
+---
+
+## Project Structure
+
+```
+weather-app-react/
+│
+├── src/
+│   ├── components/
+│   │   ├── SearchBox.jsx
+│   │   ├── SearchBox.css
+│   │   ├── WeatherCard.jsx
+│   │   └── WeatherCard.css
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── .env.example
+```
+
+---
+
+## How to Run Locally
+
+1. **Clone the repository:**
+
+```
+git clone https://github.com/rajpatil005/weather-app-react.git
+cd weather-app-react
+```
+
+2. **Install dependencies:**
+
+```
+npm install
+```
+
+3. **Create a `.env` file** (copy from `.env.example`) and add your OpenWeatherMap API key:
+
+```
+VITE_WEATHER_API_KEY=your_api_key_here
+```
+
+4. **Start the development server:**
+
+```
+npm run dev
+```
+
+5. Open the browser at the URL provided by Vite (usually `http://localhost:5173/`)
+
+---
+
+## Notes
+
+- The `.env` file is **not pushed to GitHub** for security  
+- The app shows **loading state**, **error handling**, and **Enter key support**  
+- UI uses **gradient background and cards** for better readability
+
+---
+
+## Contact
+
+If you want to discuss this project or see more of my work:
+
+- **GitHub:** [rajpatil005](https://github.com/rajpatil005)  
+- **LinkedIn:** [Rajvardhan Patil](https://www.linkedin.com/in/rajvardhan-patil-06727a300/)
