@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #c1c2c3, #e0e0e0);
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  text-align: center;
+  padding-top: 40px;
+  min-height: 100vh;
+}
